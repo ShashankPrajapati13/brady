@@ -137,3 +137,75 @@ gsap.to("#nav",{
  
  })
  
+ gsap.to("#div1",{
+  scrollTrigger:{
+      trigger:"#div1",
+      scroller:"#main",
+      start: "top 90%",
+      scroll:"smooth",
+      end: "bottom 150%",
+  },
+  left:"8%",
+  duration:1,
+ 
+ })
+ gsap.to("#div2",{
+  scrollTrigger:{
+      trigger:"#div2",
+      scroller:"#main",
+      start: "top 90%",
+      scroll:"smooth",
+      end: "bottom 150%",
+  },
+  left:"52%",
+  duration:1,
+ 
+ })
+ gsap.to("#div3",{
+  scrollTrigger:{
+      trigger:"#div3",
+      scroller:"#main",
+      start: "top 90%",
+      scroll:"smooth",
+      end: "bottom 150%",
+  },
+  left:"8%",
+  duration:1,
+ 
+ })
+ gsap.to("#div4",{
+  scrollTrigger:{
+      trigger:"#div4",
+      scroller:"#main",
+      start: "top 90%",
+      scroll:"smooth",
+      end: "bottom 150%",
+  },
+  left:"52%",
+  duration:1,
+ 
+ })
+ gsap.to("#div5",{
+  scrollTrigger:{
+      trigger:"#div5",
+      scroller:"#main",
+      start: "top 90%",
+      scroll:"smooth",
+      end: "bottom 150%",
+  },
+  left:"8%",
+  duration:1,
+ 
+ })
+ gsap.to("#div6",{
+  scrollTrigger:{
+      trigger:"#div6",
+      scroller:"#main",
+      start: "top 90%",
+      scroll:"smooth",
+      end: "bottom 150%",
+  },
+  left:"52%",
+  duration:1,
+ 
+ })

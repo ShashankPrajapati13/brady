@@ -410,27 +410,27 @@ body {
 }
 #div1 {
   top: 5%;
-  left: 8%;
+  left: 52%;
 }
 #div2 {
   top: 5%;
-  left: 52%;
+  left: 8%;
 }
 #div3 {
   top: 37.5%;
-  left: 8%;
+  left: 52%;
 }
 #div4 {
   top: 37.5%;
-  left: 52%;
+  left: 8%;
 }
 #div5 {
   top: 70%;
-  left: 8%;
+  left: 52%;
 }
 #div6 {
   top: 70%;
-  left: 52%;
+  left: 8%;
 }
 #main4 .div #dot {
   height: 0.4vw;
@@ -593,7 +593,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 45%;
+  width: 49%;
   font-family: "Gt america extended", sans-serif;
   font-size: 0.9vw;
   letter-spacing: 7px;
@@ -655,7 +655,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 45%;
+  width: 48%;
   font-family: "Gt america extended", sans-serif;
   font-size: 0.9vw;
   letter-spacing: 7px;
@@ -713,7 +713,7 @@ body {
   overflow-x: hidden;
 }
 #main7 #text {
-  width: 17%;
+  width: 19%;
   font-size: 1.3vw;
   font-family: "Gt america extended", sans-serif;
   display: flex;
