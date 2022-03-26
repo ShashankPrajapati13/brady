@@ -1,0 +1,984 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #f7f7f7;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  background-color: rgb(20, 20, 20);
+   cursor: none; 
+}
+*::-webkit-scrollbar{
+  display: none;
+}
+#main {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+#main1 {
+  position: relative;
+  width: 100vw;
+  height: 115vh;
+  background-image: url("https://uploads-ssl.webflow.com/61d4b50a3b130a78a63644fe/61e57cced52b4c5f7554323e_Header%20Background.png");
+  background-color: rgb(28, 28, 28);
+  background-size: cover;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+#container {
+  perspective: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffff;
+}
+#main1 #blur,
+#circle {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+#circle {
+  width: 35.5vw;
+}
+#blur {
+  width: 40vw;
+}
+#nav {
+  position: relative;
+  font-family: "Gt america extended", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0vw 5.2vw;
+  opacity: 0;
+}
+#nav #text {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7vw;
+  letter-spacing: 1.5px;
+}
+#nav #text h3:nth-child(1) {
+  color: #f76236;
+}
+#nav #text #ih3 h3:nth-child(1) {
+  color: #f7f7f7;
+}
+#nav #text h3:hover {
+  color: #f76236;
+}
+#nav #text #ih3 h3:hover {
+  color: #f76236;
+}
+#text img {
+  width: 1.4vw;
+}
+#ih3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1.5px;
+}
+#ih3 i {
+  font-size: 1vw;
+}
+#logo {
+  height: 3.9vw;
+}
+#text button {
+  background-color: #f76236;
+  width: 7vw;
+  height: 1.8vw;
+  font-family: "Gt america extended", sans-serif;
+  color: #f7f7f7;
+  font-weight: 700;
+  border-radius: 50px;
+  letter-spacing: 1.7px;
+  font-size: 0.6vw;
+  border: none;
+}
+#txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#txt h1 {
+  font-family: Saint Monica, sans-serif;
+  font-size: 6.5vw;
+  white-space: nowrap;
+  font-weight: 400;
+}
+#txt h4 {
+  font-size: 1.2vw;
+  font-family: "Gt america extended", sans-serif;
+  letter-spacing: 0.88vw;
+  margin-left: 1vw;
+}
+#main1 #line {
+  width: 10vw;
+  height: 2px;
+  background-color: #f76236;
+  border-radius: 50px;
+  margin: 1.8vw 0;
+}
+#txt h5 {
+  font-family: Plantin Mt Pro, sans-serif;
+  font-style: italic;
+}
+#txt button {
+  background-color: #f76236;
+  width: 9vw;
+  height: 1.9vw;
+  font-family: "Gt america extended", sans-serif;
+  color: #f7f7f7;
+  font-weight: 700;
+  border-radius: 50px;
+  letter-spacing: 1.7px;
+  font-size: 0.6vw;
+  border: none;
+  margin-top: 3.4vw;
+}
+#lovernav {
+  position: absolute;
+  font-family: "Gt america extended", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 90vw;
+  margin: 3vw 5vw;
+}
+#lovernav #text {
+  display: flex;
+  width: 15vw;
+  justify-content: space-between;
+  align-items: center;
+}
+#lovernav #lni {
+  width: 3.5vw;
+  border-radius: 50%;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+#lovernav #lni:hover {
+  box-shadow: 0 0 1.2em 0.52em rgb(247 98 54 / 60%);
+}
+#lovernav #text img {
+  width: 2vw;
+}
+#main2 {
+  width: 100vw;
+  height: 45vh;
+  background-color: #f76236;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+#main2 h2 {
+  text-align: center;
+  font-family: "GT America extended", sans-serif;
+  font-size: 1.2vw;
+  letter-spacing: 1.5px;
+  margin-top: 40px;
+}
+#main2 img {
+  width: 10vw;
+  text-align: center;
+  margin-left: 4vw;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+  transform: rotate(0);
+}
+
+#main2 #img {
+  position: absolute;
+  top: 60%;
+  left: 48.25%;
+  transform: translate(-50%, -50%);
+}
+#main3 {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(20, 20, 20);
+  position: relative;
+  overflow-x: hidden;
+
+}
+#main3 #left {
+  width: 40vw;
+  height: 60vh;
+  position: absolute;
+  top: 15%;
+  left: 4%;
+  /* background-color: #7e7e7e; */
+}
+#main3 #left #tleft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 18%;
+  font-family: "Gt america extended", sans-serif;
+  font-size: 0.6vw;
+  letter-spacing: 7px;
+}
+#main3 #left #dot {
+  width: 0.4vw;
+  height: 0.4vw;
+  background-color: #f76236;
+  border-radius: 50px;
+}
+#main3 h2 {
+  margin-top: 4.2vw;
+  font-family: "Plantin MT Pro", sans-serif;
+  font-size: 2.1vw;
+  line-height: 2.3vw;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #eaeaea;
+}
+#main3 h2 span {
+  font-style: italic;
+  color: #f76236;
+}
+#main3 #line {
+  width: 8vw;
+  height: 2.5px;
+  background-color: #f76236;
+  border-radius: 50px;
+  margin: 2.8vw 0;
+}
+#main3 h6 {
+  font-family: "Plantin MT Pro", sans-serif;
+  font-style: italic;
+  font-size: 0.9vw;
+}
+#main3 h5 {
+  margin-top: 1vw;
+  font-size: 0.9vw;
+  font-family: "Plantin MT Pro", sans-serif;
+  font-weight: 200;
+}
+#main3 #right {
+  width: 25vw;
+  height: 77vh;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+}
+.circle {
+  height: 11vw;
+  width: 11vw;
+  background-color: #f76236;
+  border-radius: 50%;
+  box-shadow: 0 0 1.2em 0.52em rgb(247 98 54 / 60%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  background-image: radial-gradient(
+    circle farthest-corner at 50% 50%,
+    #fe8967,
+    #f76236
+  );
+  font-family: "Gt america extended", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.circle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 1vw;
+}
+#trow {
+  width: 80%;
+}
+#circle1 {
+  height: 4.9vw;
+  width: 4.9vw;
+}
+#circle2 {
+  margin-left: 1.5vw;
+}
+#circle5 {
+  height: 1.6vw;
+  width: 1.6vw;
+}
+#mrow {
+  width: 110%;
+  justify-content: space-around;
+}
+#brow {
+  align-items: unset;
+  width: 90%;
+}
+#circle6 {
+  height: 7vw;
+  width: 7vw;
+  background-image: url("https://uploads-ssl.webflow.com/61d4b50a3b130a78a63644fe/61fd01b7381fa0345a169a69_Orange%20Globe%20Small%20(1).png");
+  background-color: #191b1e;
+  border: 8px solid #f76236;
+  box-shadow: 0 0 20px 4px #f76236;
+}
+#circle7 {
+  margin-left: 1.2vw;
+}
+.hover:hover {
+  height: 13vw;
+  width: 13vw;
+}
+#main4 {
+  width: 100vw;
+  height: 350vh;
+  background-color: rgb(20, 20, 20);
+  position: relative;
+  overflow-x: hidden;
+}
+#main4 #text {
+  width: 10%;
+  font-size: 1vw;
+  font-family: "Gt america extended", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  letter-spacing: 10px;
+  transform: translate(-50%, 50%);
+}
+#main4 #text h4 {
+  margin-left: 15px;
+}
+#main4 #text #dot {
+  height: 0.6vw;
+  width: 0.6vw;
+  background-color: #f76236;
+  border-radius: 50%;
+}
+.div {
+  height: 105vh;
+  width: 40vw;
+  position: absolute;
+  /* transform: translate(-50%, -50%); */
+  transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+.div img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+#div1 {
+  top: 5%;
+  left: 8%;
+}
+#div2 {
+  top: 5%;
+  left: 52%;
+}
+#div3 {
+  top: 37.5%;
+  left: 8%;
+}
+#div4 {
+  top: 37.5%;
+  left: 52%;
+}
+#div5 {
+  top: 70%;
+  left: 8%;
+}
+#div6 {
+  top: 70%;
+  left: 52%;
+}
+#main4 .div #dot {
+  height: 0.4vw;
+  width: 0.4vw;
+  background-color: #f76236;
+  border-radius: 50%;
+}
+#main4 .div #text1 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+}
+#main4 .div #text1 h4 {
+  margin-left: 2vw;
+  letter-spacing: 0.5vw;
+}
+#main4 .div #text2 {
+  position: absolute;
+  top: 76%;
+  left: 10%;
+}
+#main4 .div #text2 h1 {
+  font-size: 2.6vw;
+}
+#main4 .div #text2 #line {
+  width: 6vw;
+  height: 2px;
+  background-color: #f76236;
+  margin-top: 1vw;
+  margin-bottom: 2.5vw;
+}
+#main4 .div #text2 h6 {
+  font-family: "Plantin MT Pro", sans-serif;
+  font-size: 1vw;
+  font-weight: 200;
+}
+#main4 button {
+  background-color: #f76236;
+  width: 7vw;
+  height: 1.8vw;
+  font-family: "Gt america extended", sans-serif;
+  color: #f7f7f7;
+  font-weight: 700;
+  border-radius: 50px;
+  letter-spacing: 1.7px;
+  font-size: 0.6vw;
+  border: none;
+  position: absolute;
+  top: 102%;
+  left: 50.25%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.div:hover{
+  height:110vh ;
+  width: 42vw;
+}
+#main5 {
+  width: 100vw;
+  height: 150vh;
+  background-color: rgb(20, 20, 20);
+  position: relative;
+  overflow: hidden;
+}
+#main5 img {
+  height: 11vw;
+  width: 11vw;
+  position: absolute;
+  top: 18%;
+  left: 82%;
+}
+#main5 h1 {
+  position: absolute;
+  font-family: Saint Monica, sans-serif;
+  font-size: 12.2vw;
+  font-weight: 500;
+  white-space: nowrap;
+}
+#the {
+  top: 16%;
+  left: 5%;
+}
+#main5 #drev {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 36.25%;
+  left: 40%;
+  color: #f76236;
+}
+#main5 #span {
+  height: 9vw;
+  width: 9vw;
+  border-radius: 50%;
+  background-color: #f76236;
+  box-shadow: 0 0 1.2em 0.52em rgb(247 98 54 / 60%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  background-image: radial-gradient(
+    circle farthest-corner at 50% 50%,
+    #fe8967,
+    #f76236
+  );
+  margin: 0 1vw;
+}
+#drev h1,
+#span {
+  position: initial;
+  color: #f76236;
+}
+#will {
+  top: 60%;
+  left: -7.5%;
+}
+#digi {
+  top: 82%;
+  left: 47.5%;
+}
+#main6 {
+  width: 100vw;
+  height: 250vh;
+  background-color: rgb(20, 20, 20);
+  position: relative;
+  overflow-x: hidden;
+}
+#main6 #text {
+  width: 12%;
+  font-size: 1.2vw;
+  font-family: "Gt america extended", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 49.25%;
+  top: 14%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 10px;
+}
+#main6 #text h4 {
+  margin-left: 10px;
+  font-weight: 700;
+}
+#main6 #text #dot {
+  height: 0.6vw;
+  width: 0.6vw;
+  background-color: #f76236;
+  border-radius: 50%;
+}
+#main6 #left {
+  width: 40vw;
+  height: 60vh;
+  position: absolute;
+  top: 24.5%;
+  left: 4.5%;
+  /* background-color: #7e7e7e; */
+}
+#main6 #left #tleft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+  font-family: "Gt america extended", sans-serif;
+  font-size: 0.9vw;
+  letter-spacing: 7px;
+}
+#main6 #left #dot {
+  width: 0.6vw;
+  height: 0.6vw;
+  background-color: #f76236;
+  border-radius: 50px;
+}
+#main6 h2 {
+  margin-top: 2.5vw;
+  font-family: "Plantin MT Pro", sans-serif;
+  font-size: 2.5vw;
+  line-height: 3vw;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #eaeaea;
+}
+#main6 h2 span {
+  font-style: italic;
+  color: #f76236;
+}
+#main6 #line {
+  width: 11vw;
+  height: 4px;
+  background-color: #f76236;
+  border-radius: 50px;
+  margin: 2.8vw 0;
+}
+#main6 h6 {
+  font-family: "Plantin MT Pro", sans-serif;
+  font-weight: 200;
+  font-size: 1.1vw;
+}
+#main6 #left button {
+  background-color: #f76236;
+  width: 8vw;
+  height: 2vw;
+  font-family: "Gt america extended", sans-serif;
+  color: #f7f7f7;
+  font-weight: 900;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  font-size: 0.9vw;
+  border: none;
+  margin: 2.5vw 0;
+  z-index: 9999;
+}
+#main6 #bleft {
+  width: 40vw;
+  height: 60vh;
+  position: absolute;
+  top: 62%;
+  left: 54.5%;
+  /* background-color: #7e7e7e; */
+}
+#main6 #bleft #tleft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+  font-family: "Gt america extended", sans-serif;
+  font-size: 0.9vw;
+  letter-spacing: 7px;
+}
+#main6 #bleft #dot {
+  width: 0.6vw;
+  height: 0.6vw;
+  background-color: #f76236;
+  border-radius: 50px;
+}
+#main6 h2 {
+  margin-top: 2.5vw;
+  font-family: "Plantin MT Pro", sans-serif;
+  font-size: 2.5vw;
+  line-height: 3vw;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #eaeaea;
+}
+#main6 h2 span {
+  font-style: italic;
+  color: #f76236;
+}
+#main6 #line {
+  width: 11vw;
+  height: 4px;
+  background-color: #f76236;
+  border-radius: 50px;
+  margin: 2.8vw 0;
+}
+#main6 h6 {
+  font-family: "Plantin MT Pro", sans-serif;
+  font-weight: 200;
+  font-size: 1.1vw;
+}
+#main6 #bleft button {
+  background-color: #f76236;
+  width: 8vw;
+  height: 2vw;
+  font-family: "Gt america extended", sans-serif;
+  color: #f7f7f7;
+  font-weight: 900;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  font-size: 0.9vw;
+  border: none;
+  margin: 2.5vw 0;
+  z-index: 9999;
+}
+#main7 {
+  width: 100vw;
+  height: 143.5vh;
+  background-color: rgb(20, 20, 20);
+  position: relative;
+  overflow-x: hidden;
+}
+#main7 #text {
+  width: 17%;
+  font-size: 1.3vw;
+  font-family: "Gt america extended", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 49.25%;
+  top: 2%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 10px;
+}
+#main7 #text h4 {
+  margin-left: 10px;
+  font-weight: 700;
+}
+#main7 #text #dot {
+  height: 0.6vw;
+  width: 0.6vw;
+  background-color: #f76236;
+  border-radius: 50%;
+}
+#main7 #dix {
+  width: 100vw;
+  height: 59vh;
+  position: absolute;
+  bottom: 0%;
+  background-image: url("https://uploads-ssl.webflow.com/61d4b50a3b130a78a63644fe/61fb0178422b52368a13cd72_Group%201704%20(1).png");
+}
+#main7 #img1,
+#img2 {
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#main7 #img1 {
+  top: 20%;
+}
+#main7 #img2 {
+  top: 40%;
+}
+#main7 #img1 img,
+#main7 #img2 img {
+  transform: scale(0.8);
+  transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+#main7 #img1 img:hover{
+  transform: scale(1.1);
+}
+#main7 #img2 img:hover{
+  transform: scale(1.1);
+}
+#main7 #dix #mid {
+  position: absolute;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Plantin MT Pro, sans-serif;
+  text-align: center;
+}
+#main7 #dix #mid h1:nth-child(1) {
+  color: #191b1e;
+  font-size: 3vw;
+  letter-spacing: 0.1vw;
+  font-weight: 200;
+}
+#main7 #dix #mid h1:nth-child(2) {
+  font-size: 3vw;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 0.1vw;
+}
+#main7 #dix #mid h3 {
+  margin-top: 3vw;
+  font-weight: 900;
+  font-size: 1.3vw;
+}
+#main7 #dix #mid button {
+  background-color: #f7f7f7;
+  width: 11vw;
+  height: 2.2vw;
+  font-family: "Gt america extended", sans-serif;
+  color: #191b1e;
+  font-weight: 600;
+  border-radius: 50px;
+  letter-spacing: 0.3vw;
+  font-size: 0.9vw;
+  border: none;
+  margin: 2.5vw 0;
+  z-index: 9999;
+}
+#main8 {
+  width: 100vw;
+  height: 54vh;
+  background-color: #191b1e;
+  position: relative;
+  overflow-x: hidden;
+}
+#main8 #mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 75%;
+  height: 60%;
+  position: absolute;
+  top: 25%;
+  left: 19%;
+  font-family: "Gt america extended", sans-serif;
+}
+#main8 #mid h2 {
+  margin-bottom: 2vw;
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+#main8 #mid h2 img {
+  margin-right: 1vw;
+}
+#main8 #mid #logo {
+  position: absolute;
+  top: -5%;
+  left: -20%;
+}
+#main8 #mid .oc {
+  color: #f76236;
+}
+#main8 #mid #third #text {
+  margin-top: -1.1vw;
+}
+#main8 #mid #third #text img {
+  width: 2vw;
+}
+#main8 #mid h2:hover {
+  color: #f76236;
+}
+
+#main6 #right {
+  height: 70vh;
+  width: 45vw;
+  position: absolute;
+  top: 22%;
+  left: 49%;
+}
+#main6 #right #rbot {
+  height: 35vh;
+  width: 28vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url("https://uploads-ssl.webflow.com/61d4b50a3b130a78a63644fe/61fd024665633519b3705bbe_Background%20Mask%20(1).png");
+  z-index: 0;
+}
+#main6 #right #hand {
+  height: 28vw;
+  width: 28vw;
+  border-radius: 50%;
+  position: absolute;
+  left: 10%;
+  overflow: hidden;
+  z-index: 4;
+}
+
+#main6 #right #book {
+  transform: scale(0.7);
+  overflow: hidden;
+  z-index: 9000;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+#main6 #right #book {
+  transform: scale(0.7);
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  z-index: 8;
+}
+#main6 #right #cir {
+  transform: scale(0.6);
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  z-index: 999;
+}
+#main6 #right #round {
+  transform: scale(0.6);
+  position: absolute;
+  top: 8%;
+  left: 45%;
+  z-index: 2;
+}
+#main6 #bright {
+  height: 70vh;
+  width: 45vw;
+  position: absolute;
+  top: 62%;
+  left: 1%;
+}
+#main6 #bright #rbot {
+  height: 35vh;
+  width: 28vw;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://uploads-ssl.webflow.com/61d4b50a3b130a78a63644fe/61fd024665633519b3705bbe_Background%20Mask%20(1).png");
+  z-index: 0;
+}
+#main6 #bright #hand {
+  height: 28vw;
+  width: 28vw;
+  border-radius: 50%;
+  position: absolute;
+  right: 10%;
+  overflow: hidden;
+  z-index: 4;
+}
+
+#main6 #bright #book {
+  overflow: hidden;
+  z-index: 9000;
+  position: absolute;
+  top: 25%;
+  left: -10%;
+  transform: scale(0.72);
+  z-index: 8;
+}
+#main6 #bright #cir {
+  transform: scale(0.5);
+  position: absolute;
+  top: 62%;
+  right: 38%;
+  z-index: 999;
+}
+#main6 #bright #round {
+  transform: scale(0.6);
+  position: absolute;
+  top: 4%;
+  left: -6%;
+  z-index: 2;
+}
+#contain {
+  width: 30vw;
+  height: 82vh;
+  position: absolute;
+  top: 10%;
+  left: 54%;
+}
+
+#cursor {
+  height: 1.8vw;
+  width: 1.8vw;
+  background-color: #f76236;
+  border-radius: 50%;
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  z-index: 99999999;
+  transition: linear;
+  will-change: left top;
+  
+}
+/*#ecursor {
+  height: 8vw;
+  width: 8vw;
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  z-index: 99999999;
+  transform: translate(2%, 2%);
+  transition: linear 0.1s;
+  border-radius: 50%;
+}
+#ecursor img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
