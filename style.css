@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Gt america extended";
+  src: url(./GTAmericaExtendedBold.ttf);
+}
+@font-face {
+  font-family: "Plantin MT Pro";
+  src: url(./PlantinMTProRg.TTF);
+}
+@font-face {
+  font-family: "Saint Monica";
+  src: url(./SaintMonica.ttf);
+}
 * {
   padding: 0;
   margin: 0;
