@@ -109,7 +109,7 @@ animate.forEach(function(elem){
     scrollTrigger:{
       trigger:elem,
       scroller:"#main",
-      start:"top 93%",
+      start:"top 95%",
       
     },
     opacity:1,

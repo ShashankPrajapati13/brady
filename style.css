@@ -23,14 +23,13 @@ body {
   position: relative;
   overflow-x: hidden;
   background-color: rgb(20, 20, 20);
-   cursor: none; 
+  cursor: none;
 }
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
   display: none;
 }
 #main {
   width: 100%;
-  min-height: 100%;
   overflow-x: hidden;
 }
 #main1 {
@@ -54,7 +53,6 @@ body {
 #main1 #blur,
 #circle {
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
-
   position: absolute;
   transform: translate(-50%, -50%);
   transition: transform 0.5s;
@@ -209,7 +207,6 @@ body {
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: hidden;
-
 }
 #main2 h2 {
   text-align: center;
@@ -237,8 +234,7 @@ body {
   height: 100vh;
   background-color: rgb(20, 20, 20);
   position: relative;
-  overflow-x: hidden;
-
+  overflow: hidden;
 }
 #main3 #left {
   width: 40vw;
@@ -400,7 +396,7 @@ body {
   width: 40vw;
   position: absolute;
   /* transform: translate(-50%, -50%); */
-  transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
 .div img {
   object-fit: cover;
@@ -486,8 +482,8 @@ body {
   transform: translate(-50%, -50%);
   z-index: 9999;
 }
-.div:hover{
-  height:110vh ;
+.div:hover {
+  height: 110vh;
   width: 42vw;
 }
 #main5 {
@@ -761,12 +757,12 @@ body {
 #main7 #img1 img,
 #main7 #img2 img {
   transform: scale(0.8);
-  transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
-#main7 #img1 img:hover{
+#main7 #img1 img:hover {
   transform: scale(1.1);
 }
-#main7 #img2 img:hover{
+#main7 #img2 img:hover {
   transform: scale(1.1);
 }
 #main7 #dix #mid {
@@ -976,7 +972,6 @@ body {
   z-index: 99999999;
   transition: linear;
   will-change: left top;
-  
 }
 /*#ecursor {
   height: 8vw;
@@ -993,4 +988,834 @@ body {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}*/
+
+@media (max-width: 500px) {
+  #main1 {
+    height: 94vh;
+  }
+  #circle {
+    width: 84vw;
+  }
+  #blur {
+    width: 95vw;
+  }
+  #nav {
+    margin: 0vw 5.2vw;
+  }
+  #nav #text {
+    width: 70vw;
+    font-size: 1.7vw;
+  }
+  #text img {
+    width: 2.2vw;
+  }
+  #ih3 i {
+    font-size: 2.3vw;
+  }
+  #logo {
+    height: 8vw;
+  }
+  #text button {
+    width: 11vw;
+    height: 3vw;
+    font-size: 1.2vw;
+  }
+  #txt {
+    left: 50%;
+    top: 50%;
+  }
+  #txt h1 {
+    font-size: 10.2vw;
+  }
+  #txt h4 {
+    font-size: 2.5vw;
+    font-family: "Gt america extended", sans-serif;
+    letter-spacing: 1.5vw;
+    margin-left: 0vw;
+  }
+  #main1 #line {
+    width: 25vw;
+    height: 2px;
+    background-color: #f76236;
+    border-radius: 50px;
+    margin: 6vw 0;
+  }
+  #txt h5 {
+    font-family: Plantin Mt Pro, sans-serif;
+    font-style: italic;
+    font-size: 2vw;
+  }
+  #txt button {
+    width: 17vw;
+    height: 3vw;
+    font-size: 1.4vw;
+    margin-top: 7vw;
+  }
+  #lovernav {
+    left: 0;
+    bottom: 3%;
+    width: 90vw;
+    margin: 3vw 5vw;
+  }
+  #lovernav #text {
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #lovernav #lni {
+    width: 6vw;
+  }
+  #lovernav #lni:hover {
+    box-shadow: 0 0 1.2em 0.52em rgb(247 98 54 / 60%);
+  }
+  #lovernav #text img {
+    width: 4.5vw;
+  }
+  #main2 {
+    height: 25vh;
+  }
+  #main2 h2 {
+    font-size: 3vw;
+    margin-top: 20px;
+  }
+  #main2 img {
+    width: 22vw;
+  }
+
+  #main2 #img {
+    top: 55%;
+    left: 59%;
+    width: 100vw;
+  }
+  #main3 {
+    height: 100vh;
+    overflow-y: hidden;
+    border-top: 1px solid transparent;
+  }
+  #main3 #left {
+    width: 90vw;
+    height: 40vh;
+    top: 8%;
+    left: 6%;
+  }
+  #main3 #left #tleft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 26%;
+    font-family: "Gt america extended", sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 7px;
+  }
+  #main3 #left #dot {
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+  #main3 h2 {
+    margin-top: 4.2vw;
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+  #main3 #line {
+    width: 15vw;
+    height: 2px;
+    margin: 2.8vw 0;
+  }
+  #main3 h6 {
+    font-size: 2vw;
+  }
+  #main3 h5 {
+    margin-top: 3vw;
+    font-size: 2vw;
+  }
+  #contain {
+    width: 100vw;
+    height: 55vh;
+    top: 35%;
+    left: 10%;
+  }
+  #main3 #right {
+    width: 65vw;
+    height: 30vh;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+  }
+  .circle {
+    height: 30vw;
+    width: 30vw;
+    background-color: #f76236;
+    border-radius: 50%;
+    box-shadow: 0 0 1.2em 0.52em rgb(247 98 54 / 60%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    background-image: radial-gradient(
+      circle farthest-corner at 50% 50%,
+      #fe8967,
+      #f76236
+    );
+    font-family: "Gt america extended", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .circle h3 {
+    font-size: 4vw;
+  }
+  .circle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 1vw;
+  }
+  #trow {
+    width: 90%;
+  }
+  #circle1 {
+    height: 12vw;
+    width: 12vw;
+  }
+  #circle2 {
+    margin-left: 1.5vw;
+  }
+  #circle5 {
+    height: 6vw;
+    width: 6vw;
+  }
+  #mrow {
+    width: 120%;
+    justify-content: space-around;
+  }
+  #brow {
+    align-items: unset;
+    width: 100%;
+  }
+  #circle6 {
+    height: 18vw;
+    width: 18vw;
+    background-image: url("https://uploads-ssl.webflow.com/61d4b50a3b130a78a63644fe/61fd01b7381fa0345a169a69_Orange%20Globe%20Small%20(1).png");
+    background-color: #191b1e;
+    border: 5px solid #f76236;
+    box-shadow: 0 0 20px 4px #f76236;
+    font-size: 2vw;
+  }
+  #circle7 {
+    margin-left: 1.2vw;
+  }
+  .hover:hover {
+    height: 35vw;
+    width: 35vw;
+  }
+  #main4 {
+    width: 100vw;
+    height: 125vh;
+    overflow: hidden;
+  }
+  #main4 #text {
+    width: 30%;
+    font-size: 2.5vw;
+  }
+  #main4 #text h4 {
+    margin-left: 15px;
+  }
+  #main4 #text #dot {
+    height: 1.6vw;
+    width: 1.6vw;
+    background-color: #f76236;
+    border-radius: 50%;
+  }
+  .div {
+    height: 33vh;
+    width: 40vw;
+    position: absolute;
+    border-radius: 50px;
+    overflow: hidden;
+    /* transform: translate(-50%, -50%); */
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  }
+
+  #div1 {
+    top: 4%;
+    left: 52%;
+  }
+  #div2 {
+    top: 4%;
+    left: 8%;
+  }
+  #div3 {
+    top: 33%;
+    left: 52%;
+  }
+  #div4 {
+    top: 33%;
+    left: 8%;
+  }
+  #div5 {
+    top: 62%;
+    left: 52%;
+  }
+  #div6 {
+    top: 62%;
+    left: 8%;
+  }
+  #main4 .div #dot {
+    height: 1vw;
+    width: 1vw;
+    background-color: #f76236;
+    border-radius: 50%;
+  }
+  #main4 .div #text1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+  }
+  #main4 .div #text1 h4 {
+    margin-left: 2vw;
+    letter-spacing: 0.5vw;
+    font-size: 1.9vw;
+  }
+  #main4 .div #text2 {
+    position: absolute;
+    top: 76%;
+    left: 10%;
+  }
+  #main4 .div #text2 h1 {
+    font-size: 3.5vw;
+  }
+  #main4 .div #text2 #line {
+    width: 10vw;
+    height: 2px;
+    background-color: #f76236;
+    margin-top: 1vw;
+    margin-bottom: 2.5vw;
+  }
+  #main4 .div #text2 h6 {
+    font-family: "Plantin MT Pro", sans-serif;
+    font-size: 1.6vw;
+    font-weight: 200;
+  }
+  #main4 button {
+    background-color: #f76236;
+    width: 20vw;
+    height: 4vw;
+    font-family: "Gt america extended", sans-serif;
+    color: #f7f7f7;
+    font-weight: 700;
+    border-radius: 50px;
+    letter-spacing: 1.7px;
+    font-size: 1.6vw;
+    border: none;
+    position: absolute;
+    top: 94%;
+    left: 50.25%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+  .div:hover {
+    height: 36vh;
+    width: 42vw;
+  }
+  #main5 {
+    width: 100vw;
+    height: 45vh;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+    /* overflow: hidden; */
+  }
+  #main5 img {
+    height: 11vw;
+    width: 11vw;
+    position: absolute;
+    top: 18%;
+    left: 82%;
+  }
+  #main5 h1 {
+    position: absolute;
+    font-family: Saint Monica, sans-serif;
+    font-size: 12.2vw;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  #the {
+    top: 16%;
+    left: 5%;
+  }
+  #main5 #drev {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 36.25%;
+    left: 40%;
+    color: #f76236;
+  }
+  #main5 #span {
+    height: 9vw;
+    width: 9vw;
+    border-radius: 50%;
+    background-color: #f76236;
+    box-shadow: 0 0 1.2em 0.52em rgb(247 98 54 / 60%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    background-image: radial-gradient(
+      circle farthest-corner at 50% 50%,
+      #fe8967,
+      #f76236
+    );
+    margin: 0 1vw;
+  }
+  #drev h1,
+  #span {
+    position: initial;
+    color: #f76236;
+  }
+  #will {
+    top: 60%;
+    left: -7.5%;
+  }
+  #digi {
+    top: 82%;
+    left: 47.5%;
+  }
+  #main6 {
+    width: 100vw;
+    height: 145vh;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+    overflow: hidden;
+  }
+  #main6 #text {
+    width: 38%;
+    font-size: 2.5vw;
+    font-family: "Gt america extended", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 49.25%;
+    top: 2%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+  }
+  #main6 #text h4 {
+    margin-left: 10px;
+    font-weight: 700;
+  }
+  #main6 #text #dot {
+    height: 1.3vw;
+    width: 1.3vw;
+    background-color: #f76236;
+    border-radius: 50%;
+  }
+  #main6 #left {
+    width: 65vw;
+    height: 60vh;
+    position: absolute;
+    top: 10%;
+    left: 4.5%;
+    /* background-color: #7e7e7e; */
+  }
+  #main6 #left #tleft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    font-family: "Gt america extended", sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 7px;
+  }
+  #main6 #left #dot {
+    width: 1vw;
+    height: 1vw;
+    background-color: #f76236;
+    border-radius: 50px;
+  }
+  #main6 #left h2 {
+    margin-top: 2.5vw;
+    font-family: "Plantin MT Pro", sans-serif;
+    font-size: 4vw;
+    line-height: 4vw;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #eaeaea;
+  }
+  #main6 h2 span {
+    font-style: italic;
+    color: #f76236;
+  }
+  #main6 #line {
+    width: 11vw;
+    height: 4px;
+    background-color: #f76236;
+    border-radius: 50px;
+    margin: 2.8vw 0;
+  }
+  #main6 h6 {
+    font-family: "Plantin MT Pro", sans-serif;
+    font-weight: 200;
+    font-size: 1.1vw;
+  }
+  #main6 #left button {
+    background-color: #f76236;
+    width: 8vw;
+    height: 2vw;
+    font-family: "Gt america extended", sans-serif;
+    color: #f7f7f7;
+    font-weight: 900;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    font-size: 0.9vw;
+    border: none;
+    margin: 2.5vw 0;
+    z-index: 9999;
+  }
+  #main6 #bleft {
+    width: 80vw;
+    height: 60vh;
+    position: absolute;
+    top: 55%;
+    left: 34.5%;
+    /* background-color: #7e7e7e; */
+  }
+  #main6 #bleft #tleft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    font-family: "Gt america extended", sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 7px;
+  }
+  #main6 #bleft #dot {
+    width: 1vw;
+    height: 1vw;
+    background-color: #f76236;
+    border-radius: 50px;
+  }
+  #main6 h2 {
+    margin-top: 2.5vw;
+    font-family: "Plantin MT Pro", sans-serif;
+    font-size: 4vw;
+    line-height: 4vw;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #eaeaea;
+  }
+  #main6 h2 span {
+    font-style: italic;
+    color: #f76236;
+  }
+  #main6 #line {
+    width: 11vw;
+    height: 4px;
+    background-color: #f76236;
+    border-radius: 50px;
+    margin: 2.8vw 0;
+  }
+  #main6 h6 {
+    font-family: "Plantin MT Pro", sans-serif;
+    font-weight: 200;
+    font-size: 1.1vw;
+  }
+  #main6 #bleft button {
+    background-color: #f76236;
+    width: 8vw;
+    height: 2vw;
+    font-family: "Gt america extended", sans-serif;
+    color: #f7f7f7;
+    font-weight: 900;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    font-size: 0.9vw;
+    border: none;
+    margin: 2.5vw 0;
+    z-index: 9999;
+  }
+  #main7 {
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+    overflow: hidden;
+  }
+  #main7 #text {
+    width: 45%;
+    font-size: 1.6vw;
+    font-family: "Gt america extended", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 49.25%;
+    top: 2%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+  }
+  #main7 #text h4 {
+    margin-left: 10px;
+    font-weight: 700;
+  }
+  #main7 #text #dot {
+    height: 1vw;
+    width: 1vw;
+    background-color: #f76236;
+    border-radius: 50%;
+  }
+  #main7 #dix {
+    width: 100vw;
+    height: 17vh;
+    position: absolute;
+    bottom: 0%;
+    background-image: url("https://uploads-ssl.webflow.com/61d4b50a3b130a78a63644fe/61fb0178422b52368a13cd72_Group%201704%20(1).png");
+  }
+  #main7 #img1,
+  #img2 {
+    width: 96vw;
+    position: absolute;
+    height: 10vh;
+    transform: translate(-50%, -50%);
+  }
+  #main7 #img1 {
+    top: 20%;
+    left: 50%;
+  }
+  #img1 img:nth-child(1) {
+    left: -10%;
+  }
+  #img1 img:nth-child(2) {
+    left: -20%;
+  }
+  #img1 img:nth-child(3) {
+    left: 35%;
+  }
+  #img1 img:nth-child(4) {
+    left: 32.5%;
+  }
+  #img1 img:nth-child(5) {
+    left: 67%;
+  }
+  #img2 img:nth-child(1) {
+    left: -22%;
+  }
+  #img2 img:nth-child(2) {
+    left: -12%;
+  }
+  #img2 img:nth-child(3) {
+    left: 11%;
+  }
+  #img2 img:nth-child(4) {
+    left: 39.25%;
+  }
+  #img2 img:nth-child(5) {
+    left: 63%;
+  }
+  #main7 #img2 {
+    top: 40%;
+    left: 50%;
+  }
+  #main7 #img1 img,
+  #main7 #img2 img {
+    transform: scale(0.24);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    position: absolute;
+  }
+
+  #main7 #img1 img:hover {
+    transform: scale(0.3);
+  }
+  #main7 #img2 img:hover {
+    transform: scale(0.3);
+  }
+  #main7 #dix #mid {
+    position: absolute;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Plantin MT Pro, sans-serif;
+    text-align: center;
+  }
+  #main7 #dix #mid h1:nth-child(1) {
+    color: #191b1e;
+    font-size: 3vw;
+    letter-spacing: 0.1vw;
+    font-weight: 200;
+  }
+  #main7 #dix #mid h1:nth-child(2) {
+    font-size: 3vw;
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: 0.1vw;
+  }
+  #main7 #dix #mid h3 {
+    margin-top: 3vw;
+    font-weight: 900;
+    font-size: 1.3vw;
+  }
+  #main7 #dix #mid button {
+    background-color: #f7f7f7;
+    width: 11vw;
+    height: 2.2vw;
+    font-family: "Gt america extended", sans-serif;
+    color: #191b1e;
+    font-weight: 600;
+    border-radius: 50px;
+    letter-spacing: 0.3vw;
+    font-size: 0.9vw;
+    border: none;
+    margin: 2.5vw 0;
+    z-index: 9999;
+  }
+  #main8 {
+    width: 100vw;
+    height: 20vh;
+    background-color: #191b1e;
+    position: relative;
+    overflow: hidden;
+  }
+  #main8 #mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 75%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    left: 19%;
+    font-family: "Gt america extended", sans-serif;
+  }
+  #main8 #mid h2 {
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+  }
+  #main8 #mid h2 img {
+    margin-right: 1vw;
+    width: 2vw;
+    height: 2vw;
+  }
+  #main8 #mid #logo {
+    position: absolute;
+    top: -5%;
+    left: -20%;
+  }
+  #main8 #mid .oc {
+    color: #f76236;
+  }
+  #main8 #mid #third #text {
+    margin-top: -1.1vw;
+  }
+  #main8 #mid #third #text img {
+    width: 1.5vw;
+  }
+  #main8 #mid h2:hover {
+    color: #f76236;
+  }
+
+  #main6 #right {
+    height: 30vh;
+    width: 45vw;
+    position: absolute;
+    top: 25%;
+    left: 3%;
+  }
+  #main6 #right #rbot {
+    height: 25vh;
+    width: 75vw;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    background-image: url("https://uploads-ssl.webflow.com/61d4b50a3b130a78a63644fe/61fd024665633519b3705bbe_Background%20Mask%20(1).png");
+    z-index: 0;
+  }
+  #main6 #right #hand {
+    height: 45vw;
+    width: 45vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: -6%;
+    overflow: hidden;
+    z-index: 4;
+  }
+
+  #main6 #right #book {
+    transform: scale(0.42);
+    position: absolute;
+    top: -25%;
+    left: -20%;
+    z-index: 8;
+  }
+  #main6 #right #cir {
+    transform: scale(0.44);
+    position: absolute;
+    top: 45%;
+    left: 49%;
+    z-index: 999;
+  }
+  #main6 #right #round {
+    transform: scale(0.4);
+    position: absolute;
+    top: -50%;
+    left: 45%;
+    z-index: 2;
+  }
+  #main6 #bright {
+    height: 30vh;
+    width: 45vw;
+    position: absolute;
+    top: 70%;
+    right: 0%;
+  }
+  #main6 #bright #rbot {
+    height: 25vh;
+    width: 75vw;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    background-image: url("https://uploads-ssl.webflow.com/61d4b50a3b130a78a63644fe/61fd024665633519b3705bbe_Background%20Mask%20(1).png");
+    z-index: 0;
+  }
+  #main6 #bright #hand {
+    height: 45vw;
+    width: 45vw;
+    border-radius: 50%;
+    position: absolute;
+    top: -3%;
+    left: 53%;
+    overflow: hidden;
+    z-index: 4;
+  }
+
+  #main6 #bright #book {
+    overflow: hidden;
+    z-index: 9000;
+    position: absolute;
+    top: -20%;
+    left: -95%;
+    transform: scale(0.44);
+    z-index: 8;
+  }
+  #main6 #bright #cir {
+    transform: scale(0.44);
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    z-index: 999;
+  }
+  #main6 #bright #round {
+    transform: scale(0.43);
+    position: absolute;
+    top: -45%;
+    left: -65%;
+    z-index: 2;
+  }
 }
