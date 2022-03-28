@@ -1030,20 +1030,14 @@ body {
   }
   #txt h4 {
     font-size: 2.5vw;
-    font-family: "Gt america extended", sans-serif;
-    letter-spacing: 1.5vw;
     margin-left: 0vw;
   }
   #main1 #line {
     width: 25vw;
     height: 2px;
-    background-color: #f76236;
-    border-radius: 50px;
     margin: 6vw 0;
   }
   #txt h5 {
-    font-family: Plantin Mt Pro, sans-serif;
-    font-style: italic;
     font-size: 2vw;
   }
   #txt button {
@@ -1059,16 +1053,10 @@ body {
     margin: 3vw 5vw;
   }
   #lovernav #text {
-    display: flex;
     width: 30vw;
-    justify-content: space-between;
-    align-items: center;
   }
   #lovernav #lni {
     width: 6vw;
-  }
-  #lovernav #lni:hover {
-    box-shadow: 0 0 1.2em 0.52em rgb(247 98 54 / 60%);
   }
   #lovernav #text img {
     width: 4.5vw;
@@ -1091,7 +1079,7 @@ body {
   }
   #main3 {
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
     border-top: 1px solid transparent;
   }
   #main3 #left {
@@ -1101,13 +1089,8 @@ body {
     left: 6%;
   }
   #main3 #left #tleft {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 26%;
-    font-family: "Gt america extended", sans-serif;
     font-size: 1.5vw;
-    letter-spacing: 7px;
   }
   #main3 #left #dot {
     width: 1.2vw;
