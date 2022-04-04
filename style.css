@@ -248,7 +248,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 18%;
+  width: 20%;
   font-family: "Gt america extended", sans-serif;
   font-size: 0.6vw;
   letter-spacing: 7px;
@@ -371,7 +371,7 @@ body {
   overflow-x: hidden;
 }
 #main4 #text {
-  width: 10%;
+  width: 12%;
   font-size: 1vw;
   font-family: "Gt america extended", sans-serif;
   display: flex;
@@ -555,7 +555,7 @@ body {
   overflow-x: hidden;
 }
 #main6 #text {
-  width: 12%;
+  width: 14%;
   font-size: 1.2vw;
   font-family: "Gt america extended", sans-serif;
   display: flex;
@@ -589,7 +589,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 49%;
+  width: 51%;
   font-family: "Gt america extended", sans-serif;
   font-size: 0.9vw;
   letter-spacing: 7px;
@@ -651,7 +651,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 48%;
+  width: 50%;
   font-family: "Gt america extended", sans-serif;
   font-size: 0.9vw;
   letter-spacing: 7px;
@@ -709,7 +709,7 @@ body {
   overflow-x: hidden;
 }
 #main7 #text {
-  width: 19%;
+  width: 21%;
   font-size: 1.3vw;
   font-family: "Gt america extended", sans-serif;
   display: flex;
